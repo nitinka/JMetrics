@@ -3,4 +3,4 @@
 * Such stored metrics can be viewed, graphed to make meaningful decisions in terms of scaling, improving performance and functional aspects.<br>
 * This library can be embedded within any existing java application to get meaningful metrics driven information with in few minutes. <br>
 <br><b>Sample metric report :
-![Alt Image](https://github.com/nitinka/raw/master/images/JMetricSample.png)
+![Alt Image](https://github.com/nitinka/JMetrics/raw/master/images/JMetricSample.png)
