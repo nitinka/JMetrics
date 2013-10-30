@@ -1,8 +1,9 @@
 package nitinka.jmetrics.archive;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import nitinka.jmetrics.JMetricConfig;
 import nitinka.jmetrics.domain.ResourceMetric;
+import nitinka.jmetrics.util.ObjectMapperUtil;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,7 +22,7 @@ import java.util.Map;
 abstract public class MetricArchivingEngine {
     private Map<String, Object> config;
     protected static Logger logger = LoggerFactory.getLogger(MetricArchivingEngine.class);
-    protected static ObjectMapper objectMapper = new ObjectMapper();
+    protected static ObjectMapper objectMapper = ObjectMapperUtil.instance();
 
     public MetricArchivingEngine(Map<String, Object> config) {
         this.config = config;

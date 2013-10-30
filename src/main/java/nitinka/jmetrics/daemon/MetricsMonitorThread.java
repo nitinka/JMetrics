@@ -43,7 +43,6 @@ public class MetricsMonitorThread extends Thread{
                 for(MetricMonitor metricMonitor : metricMonitors) {
                     if(canMetricMonitorRun(metricMonitor)) {
                         try {
-                            logger.info("Collecting Metric for "+metricMonitor.getName()+ " monitor");
                             MetricArchiverQueue.offer(metricMonitor.get());
                         }
                         catch (Exception e) {

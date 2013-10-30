@@ -60,7 +60,6 @@ public class RRD4JArchivingEngine extends MetricArchivingEngine{
      * @throws java.io.IOException
      */
     public void archive(List<ResourceMetric> resourceMetrics) throws IOException{
-        logger.info(ObjectMapperUtil.instance().defaultPrettyPrintingWriter().writeValueAsString(resourceMetrics));
         for(ResourceMetric resourceMetric : resourceMetrics) {
             for(Metric metric : resourceMetric.getMetrics()) {
                 if(!metricRddDBMap.containsKey(metric.getName())) {

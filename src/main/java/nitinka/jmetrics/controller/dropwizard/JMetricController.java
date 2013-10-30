@@ -10,6 +10,7 @@ import nitinka.jmetrics.JMetric;
 import nitinka.jmetrics.archive.MetricArchivingEngine;
 import nitinka.jmetrics.util.Clock;
 import nitinka.jmetrics.util.MathConstant;
+import nitinka.jmetrics.util.ObjectMapperUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -81,7 +82,7 @@ public class JMetricController {
 
         StringBuilder html = new StringBuilder("");
         for(String metric : metrics) {
-            html.append("<img src=\"http://"+request.getLocalAddr()+":"+request.getLocalPort()+"/loader-server/metrics/"+metric+"/img?startTime="+startTimeSec+"&entTime="+endTimeSec+"\"/>\n");
+            html.append("<img src=\"http://"+request.getServerName()+":"+request.getLocalPort()+request.getServletPath()+"/metrics/"+metric+"/img?startTime="+startTimeSec+"&entTime="+endTimeSec+"\"/>\n");
         }
         return html.toString().trim();
     }
