@@ -15,20 +15,21 @@
 </dependency> 
 ```
 
-2) Add following in your application.yml file :<br>
+2) Add following in your application.yml file :
 <pre>
 jMetricConfig:
   archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
   configParams:
     basePath: "/var/log/your-app/stats"
-</pre>
+</pre><br>
 
-3) Add following in your service initialization code :<br>
+3) Add following in your service initialization code :
 ```java
     JMetric.initialize(configuration.getjMetricConfig());
     environment.addResource(new JMetricController())
 ```
-4) Add following code in your Dropwizard Applicaion Config Class :<br>
+<br>
+4) Add following code in your Dropwizard Applicaion Config Class :
 ```java
     private JMetricConfig jMetricConfig;
 
@@ -40,4 +41,5 @@ jMetricConfig:
         this.jMetricConfig = jMetricConfig;
     }
 ```
+<br>
 5) Done
