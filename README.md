@@ -4,8 +4,8 @@
 * This library can be embedded within any existing java application to get meaningful metrics driven information with in few minutes. <br>
 <br><b>Sample metric report :
 ![Alt Image](https://github.com/nitinka/JMetrics/raw/master/images/JMetricSample.png)
-<br><br><br><br><br><br><br><br><br>
-<br><b>Steps to Integrate with DropWizard based BAckend Application :</b>
+<br><br>
+<br><b>Steps to Integrate with DropWizard based Backend Application :</b><br>
 1) Add maven dep(For time being you will have to build it locally. Will have it in central repo soon) :<br>
 ```xml
 <dependency>
