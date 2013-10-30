@@ -5,7 +5,9 @@
 <br><b>Sample metric report :
 ![Alt Image](https://github.com/nitinka/JMetrics/raw/master/images/JMetricSample.png)
 <br><br>
-<br><b>Steps to Integrate with DropWizard based Backend Application :</b><br>
+<br><b>Steps to Integrate with DropWizard based Backend Application :</b>
+<br>
+
 1) Add maven dep(For time being you will have to build it locally. Will have it in central repo soon) :<br>
 ```xml
 <dependency>
@@ -14,7 +16,7 @@
     <version>0.1.2</version>
 </dependency> 
 ```
-
+<br>
 2) Add following in your application.yml file :
 <pre>
 jMetricConfig:
