@@ -27,15 +27,15 @@ jMetricConfig:
 
 3) Add following in your service initialization code :<br>
 
-```java
+<pre>
     JMetric.initialize(configuration.getjMetricConfig());
     environment.addResource(new JMetricController())
-```
+</pre>
 
 <br>
 4) Add following code in your Dropwizard Applicaion Config Class :<br>
 
-```java
+<pre>
     private JMetricConfig jMetricConfig;
 
     public JMetricConfig getjMetricConfig() {
@@ -45,7 +45,7 @@ jMetricConfig:
     public void setjMetricConfig(JMetricConfig jMetricConfig) {
         this.jMetricConfig = jMetricConfig;
     }
-```
+</pre>
 
 <br>
 5) Restart your app and hit following urls
