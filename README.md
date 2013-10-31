@@ -5,7 +5,7 @@
 <br><b>Sample metric report :
 ![Alt Image](https://github.com/nitinka/JMetrics/raw/master/images/JMetricSample.png)
 <br><br>
-<br><b>Steps to Integrate with DropWizard based Backend Application :</b>
+<br><b>Steps to Integrate with DropWizard(0.5.*,0.6.1) based Backend Application :</b>
 <br>
 
 1) Add maven dep(For time being you will have to build it locally. Will have it in central repo soon) :<br>
@@ -13,7 +13,7 @@
 <dependency>
     <groupId>nitinka.jmetrics</groupId>
     <artifactId>JMetrics</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3</version>
 </dependency> 
 ```
 <br>
@@ -25,14 +25,17 @@ jMetricConfig:
     basePath: "/var/log/your-app/stats"
 </pre><br>
 
-3) Add following in your service initialization code :
-```java
+3) Add following in your service initialization code :<br>
+
+<pre>
     JMetric.initialize(configuration.getjMetricConfig());
     environment.addResource(new JMetricController())
-```
+</pre>
+
 <br>
-4) Add following code in your Dropwizard Applicaion Config Class :
-```java
+4) Add following code in your Dropwizard Applicaion Config Class :<br>
+
+<pre>
     private JMetricConfig jMetricConfig;
 
     public JMetricConfig getjMetricConfig() {
@@ -42,6 +45,17 @@ jMetricConfig:
     public void setjMetricConfig(JMetricConfig jMetricConfig) {
         this.jMetricConfig = jMetricConfig;
     }
-```
+</pre>
+
 <br>
-5) Done
+5) Restart your app and hit following urls
+<pre>
+  http://host:port/servletPath/metric
+     Returns all metrics that are being captured
+  http://host:port/servletPath/metric/img
+     Returns last 2 day graphical statistics of all metrics
+  http://host:port/servletPath/metric/metricName/img
+     Returns last 2 day graphical statistics of metric specifird
+  http://host:port/servletPath/metric/metricName/raw
+     Returns last 2 day raw statistics of metric specifird
+</pre>
