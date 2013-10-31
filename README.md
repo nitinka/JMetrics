@@ -3,4 +3,45 @@
 * Such stored metrics can be viewed, graphed to make meaningful decisions in terms of scaling, improving performance and functional aspects.<br>
 * This library can be embedded within any existing java application to get meaningful metrics driven information with in few minutes. <br>
 <br><b>Sample metric report :
-![Alt Image](https://github.com/nitinka/raw/master/images/JMetricSample.png)
+![Alt Image](https://github.com/nitinka/JMetrics/raw/master/images/JMetricSample.png)
+<br><br>
+<br><b>Steps to Integrate with DropWizard based Backend Application :</b>
+<br>
+
+1) Add maven dep(For time being you will have to build it locally. Will have it in central repo soon) :<br>
+```xml
+<dependency>
+    <groupId>nitinka.jmetrics</groupId>
+    <artifactId>JMetrics</artifactId>
+    <version>0.1.2</version>
+</dependency> 
+```
+<br>
+2) Add following in your application.yml file :
+<pre>
+jMetricConfig:
+  archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
+  configParams:
+    basePath: "/var/log/your-app/stats"
+</pre><br>
+
+3) Add following in your service initialization code :
+```java
+    JMetric.initialize(configuration.getjMetricConfig());
+    environment.addResource(new JMetricController())
+```
+<br>
+4) Add following code in your Dropwizard Applicaion Config Class :
+```java
+    private JMetricConfig jMetricConfig;
+
+    public JMetricConfig getjMetricConfig() {
+        return jMetricConfig;
+    }
+
+    public void setjMetricConfig(JMetricConfig jMetricConfig) {
+        this.jMetricConfig = jMetricConfig;
+    }
+```
+<br>
+5) Done
