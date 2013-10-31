@@ -25,13 +25,16 @@ jMetricConfig:
     basePath: "/var/log/your-app/stats"
 </pre><br>
 
-3) Add following in your service initialization code :
+3) Add following in your service initialization code :<br>
+
 ```java
     JMetric.initialize(configuration.getjMetricConfig());
     environment.addResource(new JMetricController())
 ```
+
 <br>
-4) Add following code in your Dropwizard Applicaion Config Class :
+4) Add following code in your Dropwizard Applicaion Config Class :<br>
+
 ```java
     private JMetricConfig jMetricConfig;
 
@@ -43,6 +46,7 @@ jMetricConfig:
         this.jMetricConfig = jMetricConfig;
     }
 ```
+
 <br>
 5) Restart your app and hit following urls
 <pre>
