@@ -49,41 +49,57 @@ public class JMetricController {
     @GET
     @Timed
     @Path("/{metricName}/raw")
-    synchronized public String metricRaw(@PathParam("metricName") String metricName, @QueryParam("startTime") LongParam startTime, @QueryParam("endTime") LongParam endTime)
+    synchronized public String metricRaw(@PathParam("metricName") String metricName,
+                                         @QueryParam("startTime") @DefaultValue("-1") String startTime,
+                                         @QueryParam("endTime")  @DefaultValue("-1") String endTime)
             throws IOException, ExecutionException, InterruptedException {
-        long startTimeSec = startTime == null ? (Clock.milliTick() - 2 * 24 * 60 * 60 * 1000) / MathConstant.THOUSAND: startTime.get();
-        long endTimeSec = endTime == null ? Clock.milliTick() / MathConstant.THOUSAND : endTime.get();
-        return metricArchivingEngine.fetchMetrics(metricName, "TOTAL", startTimeSec, endTimeSec);
+        return metricArchivingEngine.fetchMetrics(metricName, "TOTAL", getStartTime(startTime), getEndTime(endTime));
     }
 
     @Produces(MediaType.APPLICATION_OCTET_STREAM)
     @GET
     @Timed
     @Path("/{metricName}/img")
-    synchronized public InputStream metricImage(@PathParam("metricName") String metricName, @QueryParam("startTime") LongParam startTime, @QueryParam("endTime") LongParam endTime)
+    synchronized public InputStream metricImage(@PathParam("metricName") String metricName,
+                                                @QueryParam("startTime") @DefaultValue("-1") String startTime,
+                                                @QueryParam("endTime")  @DefaultValue("-1") String endTime)
             throws IOException, ExecutionException, InterruptedException {
-        long startTimeSec = startTime == null ? (Clock.milliTick() - 12 * 60 * 60 * 1000) / MathConstant.THOUSAND: startTime.get();
-        long endTimeSec = endTime == null ? Clock.milliTick() / MathConstant.THOUSAND : endTime.get();
-        return metricArchivingEngine.fetchMetricsImage(metricName, "TOTAL", startTimeSec, endTimeSec);
+        return metricArchivingEngine.fetchMetricsImage(metricName, "TOTAL", getStartTime(startTime), getEndTime(endTime));
     }
 
     @Produces(MediaType.TEXT_HTML)
     @GET
     @Timed
     @Path("/img")
-    synchronized public String allMetricsImg(@Context HttpServletRequest request, @QueryParam("startTime") LongParam startTime, @QueryParam("endTime") LongParam endTime)
+    synchronized public String allMetricsImg(@Context HttpServletRequest request,
+                                             @QueryParam("startTime") @DefaultValue("-1") String startTime,
+                                             @QueryParam("endTime")  @DefaultValue("-1") String endTime)
             throws IOException, ExecutionException, InterruptedException {
-
-        long startTimeSec = startTime == null ? (Clock.milliTick() - 2 * 24 * 60 * 60 * 1000) / MathConstant.THOUSAND: startTime.get();
-        long endTimeSec = endTime == null ? Clock.milliTick() / MathConstant.THOUSAND : endTime.get();
 
         List<String> metrics = metricArchivingEngine.metrics();
         Collections.sort(metrics);
 
         StringBuilder html = new StringBuilder("");
         for(String metric : metrics) {
-            html.append("<img src=\"http://"+request.getServerName()+":"+request.getLocalPort()+request.getServletPath()+"/metrics/"+metric+"/img?startTime="+startTimeSec+"&entTime="+endTimeSec+"\"/>\n");
+            html.append("<img src=\"http://"+request.getServerName()+":"+request.getLocalPort()
+                    + request.getServletPath()
+                    + "/metrics/" + metric
+                    + "/img?startTime="+getStartTime(startTime)+"&entTime="+getEndTime(endTime)+"\"/>\n");
         }
         return html.toString().trim();
+    }
+
+    private static long getStartTime(String time) {
+        if(time  == null ||  time.trim().equals("") || time.trim().equalsIgnoreCase("-1")) {
+            return Clock.secondsFromEPOC("-2d");
+        }
+        return Clock.secondsFromEPOC(time);
+    }
+
+    private static long getEndTime(String time) {
+        if(time  == null ||  time.trim().equals("")|| time.trim().equalsIgnoreCase("-1")) {
+            return Clock.secondsFromEPOC(null);
+        }
+        return Clock.secondsFromEPOC(time);
     }
 }
