@@ -8,8 +8,21 @@
 <br><b>Steps to Integrate with DropWizard(0.5.*,0.6.1) based Backend Application :</b>
 <br>
 
-1) Add maven dep(For time being you will have to build it locally. Will have it in central repo soon) :<br>
+1) Add maven dep :<br>
 ```xml
+
+<repositories>
+    <repository>
+        <id>nitinka.mvn.repo</id>
+        <url>https://github.com/nitinka/mvn-repo/raw/master</url>
+        <!-- use snapshot version -->
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+
 <dependency>
     <groupId>nitinka.jmetrics</groupId>
     <artifactId>JMetrics</artifactId>
