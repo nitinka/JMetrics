@@ -1,5 +1,6 @@
 package nitinka.jmetrics.controller.restexpress;
 
+import ch.qos.logback.core.util.FileUtil;
 import com.strategicgains.restexpress.Request;
 import com.strategicgains.restexpress.Response;
 import com.strategicgains.restexpress.RestExpress;
@@ -10,12 +11,16 @@ import nitinka.jmetrics.archive.MetricArchivingEngine;
 import nitinka.jmetrics.archive.RRD4JArchivingEngine;
 import nitinka.jmetrics.util.Clock;
 import nitinka.jmetrics.util.MathConstant;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
+import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.handler.codec.http.HttpResponseStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.ws.rs.HttpMethod;
 import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Collections;
 import java.util.List;
@@ -86,8 +91,8 @@ public class JMetricController {
         long startTimeSec = startTime == null ? (Clock.milliTick() - 2 * 24 * 60 * 60 * 1000) / MathConstant.THOUSAND: Long.parseLong(startTime);
         long endTimeSec = endTime == null ? Clock.milliTick() / MathConstant.THOUSAND: Long.parseLong(endTime);
         try {
-            //response.setBody(metricArchivingEngine.fetchMetricsImage(metricName, "TOTAL", startTimeSec, endTimeSec));
-            response.setBody(metricArchivingEngine.fetchMetricsImage(metricName, "TOTAL", startTimeSec, endTimeSec));
+            InputStream is = metricArchivingEngine.fetchMetricsImage(metricName, "TOTAL", startTimeSec, endTimeSec);
+            response.setBody(ChannelBuffers.wrappedBuffer(IOUtils.toByteArray(is)));
             response.setResponseStatus(HttpResponseStatus.OK);
         }
         catch (Throwable t) {
@@ -108,12 +113,15 @@ public class JMetricController {
             Collections.sort(metrics);
 
             StringBuilder html = new StringBuilder("");
+            html.append("<!DOCTYPE html>\n<html>\n");
             for(String metric : metrics) {
                 html.append("<img src=\"http://"+request.getHost()+"/metrics/"+metric+"/img?startTime="+startTimeSec+"&endTime="+endTimeSec+"\"/>\n");
             }
+            html.append("</html>");
 
             response.setBody(html);
             response.setResponseStatus(HttpResponseStatus.OK);
+            response.setContentType("text/html");
         }
         catch (Throwable t) {
             logger.error("Error while fetching images for all metrics", t);

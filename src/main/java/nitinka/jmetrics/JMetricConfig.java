@@ -11,6 +11,7 @@ import java.util.Map;
 public class JMetricConfig {
     private String archivalEngineClass;
     private Map<String, Object> configParams;
+    private int serverPort = 0; // Needed only if you want JMetric to Host it self as a server
 
     public JMetricConfig() {
         this.archivalEngineClass = RRD4JArchivingEngine.class.getCanonicalName();
@@ -32,5 +33,13 @@ public class JMetricConfig {
 
     public void setConfigParams(Map<String, Object> configParams) {
         this.configParams = configParams;
+    }
+
+    public int getServerPort() {
+        return serverPort;
+    }
+
+    public void setServerPort(int serverPort) {
+        this.serverPort = serverPort;
     }
 }
