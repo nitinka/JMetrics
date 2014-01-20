@@ -26,7 +26,7 @@
 <dependency>
     <groupId>nitinka.jmetrics</groupId>
     <artifactId>JMetrics</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.5</version>
 </dependency> 
 ```
 <br>
@@ -73,7 +73,7 @@ jMetricConfig:
      Returns last 2 day raw statistics of metric specifird
 </pre>
 <br><br>
-<br><b>Steps to Integrate with RestExpress(0.5.*,0.6.1) based Backend Application :</b>
+<br><b>Steps to Integrate with RestExpress :</b>
 <br>
 
 1) Add maven dep :<br>
@@ -94,11 +94,11 @@ jMetricConfig:
 <dependency>
     <groupId>nitinka.jmetrics</groupId>
     <artifactId>JMetrics</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.5</version>
 </dependency> 
 ```
 <br>
-2) Add following in your application.yml file :
+2) Initialize JMetricConfig class with following details :
 <pre>
 jMetricConfig:
   archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
@@ -109,27 +109,13 @@ jMetricConfig:
 3) Add following in your service initialization code :<br>
 
 <pre>
-    JMetric.initialize(configuration.getjMetricConfig());
-    environment.addResource(new JMetricController())
+    JMetric.initialize(jMetricConfigInstance);
+    nitinka.jmetrics.controller.restexpress.JMetricController.setup();
 </pre>
 
 <br>
-4) Add following code in your Dropwizard Applicaion Config Class :<br>
 
-<pre>
-    private JMetricConfig jMetricConfig;
-
-    public JMetricConfig getjMetricConfig() {
-        return jMetricConfig;
-    }
-
-    public void setjMetricConfig(JMetricConfig jMetricConfig) {
-        this.jMetricConfig = jMetricConfig;
-    }
-</pre>
-
-<br>
-5) Restart your app and hit following urls
+4) Restart your app and hit following urls
 <pre>
   http://host:port/servletPath/metric
      Returns all metrics that are being captured
