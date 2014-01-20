@@ -63,13 +63,13 @@ jMetricConfig:
 <br>
 5) Restart your app and hit following urls
 <pre>
-  http://host:port/servletPath/metric
+  http://host:port/servletPath/metrics
      Returns all metrics that are being captured
-  http://host:port/servletPath/metric/img
+  http://host:port/servletPath/metrics/img
      Returns last 2 day graphical statistics of all metrics
-  http://host:port/servletPath/metric/metricName/img
+  http://host:port/servletPath/metrics/metricName/img
      Returns last 2 day graphical statistics of metric specifird
-  http://host:port/servletPath/metric/metricName/raw
+  http://host:port/servletPath/metrics/metricName/raw
      Returns last 2 day raw statistics of metric specifird
 
  You can query statistics for specific duration with startTime and endTime query Parameters:
@@ -123,13 +123,13 @@ jMetricConfig:
 
 4) Restart your app and hit following urls
 <pre>
-  http://host:port/servletPath/metric
+  http://host:port/servletPath/metrics
      Returns all metrics that are being captured
-  http://host:port/servletPath/metric/img
+  http://host:port/servletPath/metrics/img
      Returns last 2 day graphical statistics of all metrics
-  http://host:port/servletPath/metric/metricName/img
+  http://host:port/servletPath/metrics/metricName/img
      Returns last 2 day graphical statistics of metric specifird
-  http://host:port/servletPath/metric/metricName/raw
+  http://host:port/servletPath/metrics/metricName/raw
      Returns last 2 day raw statistics of metric specifird
 
  You can query statistics for specific duration with startTime and endTime query Parameters:
@@ -184,13 +184,13 @@ jMetricConfig:
 
 4) Restart your app and hit following urls
 <pre>
-  http://host:4567/servletPath/metric
+  http://host:4567/servletPath/metrics
      Returns all metrics that are being captured
-  http://host:4567/servletPath/metric/img
+  http://host:4567/servletPath/metrics/img
      Returns last 2 day graphical statistics of all metrics
-  http://host:4567/servletPath/metric/metricName/img
+  http://host:4567/servletPath/metrics/metricName/img
      Returns last 2 day graphical statistics of metric specifird
-  http://host:4567/servletPath/metric/metricName/raw
+  http://host:4567/servletPath/metrics/metricName/raw
      Returns last 2 day raw statistics of metric specifird
 
  You can query statistics for specific duration with startTime and endTime query Parameters:
