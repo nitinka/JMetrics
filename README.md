@@ -72,7 +72,7 @@ jMetricConfig:
   http://host:port/servletPath/metric/metricName/raw
      Returns last 2 day raw statistics of metric specifird
 </pre>
-<br><br>
+<br>
 <br><b>Steps to Integrate with RestExpress :</b>
 <br>
 
@@ -111,6 +111,61 @@ jMetricConfig:
 <pre>
     JMetric.initialize(jMetricConfigInstance);
     nitinka.jmetrics.controller.restexpress.JMetricController.setup();
+</pre>
+
+<br>
+
+4) Restart your app and hit following urls
+<pre>
+  http://host:port/servletPath/metric
+     Returns all metrics that are being captured
+  http://host:port/servletPath/metric/img
+     Returns last 2 day graphical statistics of all metrics
+  http://host:port/servletPath/metric/metricName/img
+     Returns last 2 day graphical statistics of metric specifird
+  http://host:port/servletPath/metric/metricName/raw
+     Returns last 2 day raw statistics of metric specifird
+</pre>
+
+<br>
+<br><b>Steps to Embedded JMetric Controlled in other Applications :</b>
+<br>
+
+1) Add maven dep :<br>
+```xml
+
+<repositories>
+    <repository>
+        <id>nitinka.mvn.repo</id>
+        <url>https://github.com/nitinka/mvn-repo/raw/master</url>
+        <!-- use snapshot version -->
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>nitinka.jmetrics</groupId>
+    <artifactId>JMetrics</artifactId>
+    <version>0.1.5</version>
+</dependency> 
+```
+<br>
+2) Initialize JMetricConfig class with following details :
+<pre>
+jMetricConfig:
+  archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
+  configParams:
+    basePath: "/var/log/your-app/stats"
+  serverPort: 4567
+</pre><br>
+
+3) Add following in your service initialization code :<br>
+
+<pre>
+    JMetric.initialize(jMetricConfigInstance);
 </pre>
 
 <br>
