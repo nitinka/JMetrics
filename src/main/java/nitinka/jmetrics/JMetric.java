@@ -30,13 +30,11 @@ import java.util.Random;
  */
 public class JMetric {
 
-    private final JMetricConfig config;
     private static JMetric instance;
     private static Logger logger = LoggerFactory.getLogger(JMetric.class);
     private static MetricArchivingEngine metricArchivingEngine;
-    public JMetric(JMetricConfig config)
+    private JMetric(JMetricConfig config)
             throws ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
-        this.config = config;
         MetricsMonitorThread.startMonitoring();
         MetricsMonitorThread.addMetricMonitor(new JmxMetricMonitor("self.jmx").setInterval(30000));
         metricArchivingEngine = MetricArchivingEngine.build(config);
@@ -51,7 +49,8 @@ public class JMetric {
         });
 
         if(config.getServerPort() != 0) {
-            RestExpress server = new RestExpress()
+            logger.info("Starting Embedded Server to server JMetric Resources");
+            final RestExpress server = new RestExpress()
                     .setName("JMetric")
                     .setPort(config.getServerPort())
                     .setDefaultFormat(Format.JSON)
@@ -60,17 +59,28 @@ public class JMetric {
 
             server.uri("/metrics", new JMetricController())
                     .action("metricNames", HttpMethod.GET);
+            logger.info("Do Http Get on /metrics to get all metric names");
 
             server.uri("/metrics/img", new JMetricController())
                     .action("allMetricsImg", HttpMethod.GET).
                     noSerialization();
+            logger.info("Do Http Get on /metrics/img to get all metric images");
 
             server.uri("/metrics/{metricName}/raw", new JMetricController())
                     .action("metricRaw", HttpMethod.GET);
+            logger.info("Do Http Get on /metrics/{metricName}/raw to get metric raw details");
 
             server.uri("/metrics/{metricName}/img", new JMetricController())
                     .action("metricImg", HttpMethod.GET).
                     noSerialization();
+            logger.info("Do Http Get on /metrics/{metricName}/img to get metric stats image");
+
+            Runtime.getRuntime().addShutdownHook(new Thread() {
+                    public void run() {
+                        logger.info("Shutting down JMetric Embedded Server");
+                        server.shutdown();
+                    }
+            });
 
             server.bind();
         }

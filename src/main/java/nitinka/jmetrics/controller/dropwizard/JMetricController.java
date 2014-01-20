@@ -4,7 +4,7 @@ package nitinka.jmetrics.controller.dropwizard;
  * User: NitinK.Agarwal@yahoo.com
  */
 
-import com.yammer.dropwizard.jersey.params.LongParam;
+import com.strategicgains.restexpress.RestExpress;
 import com.yammer.metrics.annotation.Timed;
 import nitinka.jmetrics.JMetric;
 import nitinka.jmetrics.archive.MetricArchivingEngine;
@@ -20,10 +20,10 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
+import static nitinka.jmetrics.util.Clock.*;
 
 /**
  * Resource to manage operations on loader-agents
@@ -87,19 +87,5 @@ public class JMetricController {
                     + "/img?startTime="+getStartTime(startTime)+"&entTime="+getEndTime(endTime)+"\"/>\n");
         }
         return html.toString().trim();
-    }
-
-    private static long getStartTime(String time) {
-        if(time  == null ||  time.trim().equals("") || time.trim().equalsIgnoreCase("-1")) {
-            return Clock.secondsFromEPOC("-2d");
-        }
-        return Clock.secondsFromEPOC(time);
-    }
-
-    private static long getEndTime(String time) {
-        if(time  == null ||  time.trim().equals("")|| time.trim().equalsIgnoreCase("-1")) {
-            return Clock.secondsFromEPOC(null);
-        }
-        return Clock.secondsFromEPOC(time);
     }
 }

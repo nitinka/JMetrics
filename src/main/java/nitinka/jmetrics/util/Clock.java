@@ -88,4 +88,19 @@ public class Clock {
 
         return Clock.secTick() + (future * timeLong);
     }
+
+    public static long getStartTime(String time) {
+        if(time  == null ||  time.trim().equals("") || time.trim().equalsIgnoreCase("-1")) {
+            return Clock.secondsFromEPOC("-2d");
+        }
+        return Clock.secondsFromEPOC(time);
+    }
+
+    public static long getEndTime(String time) {
+        if(time  == null ||  time.trim().equals("")|| time.trim().equalsIgnoreCase("-1")) {
+            return Clock.secondsFromEPOC(null);
+        }
+        return Clock.secondsFromEPOC(time);
+    }
+
 }
