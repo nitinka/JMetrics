@@ -71,6 +71,12 @@ jMetricConfig:
      Returns last 2 day graphical statistics of metric specifird
   http://host:port/servletPath/metric/metricName/raw
      Returns last 2 day raw statistics of metric specifird
+
+ You can query statistics for specific duration with startTime and endTime query Parameters:
+Possible Values for <b>startTime/endTime</b> : -60s(60 seconds ago from now), -60m(60 mins ago from now). Use h and d for hours and days. 
+  * If startTime is missing then it is assumed to be -2d (2 days ago from now)
+  * If endTime is missing then its assumed to be current Time
+
 </pre>
 <br>
 <br><b>Steps to Integrate with RestExpress :</b>
@@ -125,6 +131,12 @@ jMetricConfig:
      Returns last 2 day graphical statistics of metric specifird
   http://host:port/servletPath/metric/metricName/raw
      Returns last 2 day raw statistics of metric specifird
+
+ You can query statistics for specific duration with startTime and endTime query Parameters:
+Possible Values for <b>startTime/endTime</b> : -60s(60 seconds ago from now), -60m(60 mins ago from now). Use h and d for hours and days. 
+  * If startTime is missing then it is assumed to be -2d (2 days ago from now)
+  * If endTime is missing then its assumed to be current Time
+
 </pre>
 
 <br>
@@ -172,12 +184,18 @@ jMetricConfig:
 
 4) Restart your app and hit following urls
 <pre>
-  http://host:port/servletPath/metric
+  http://host:4567/servletPath/metric
      Returns all metrics that are being captured
-  http://host:port/servletPath/metric/img
+  http://host:4567/servletPath/metric/img
      Returns last 2 day graphical statistics of all metrics
-  http://host:port/servletPath/metric/metricName/img
+  http://host:4567/servletPath/metric/metricName/img
      Returns last 2 day graphical statistics of metric specifird
-  http://host:port/servletPath/metric/metricName/raw
+  http://host:4567/servletPath/metric/metricName/raw
      Returns last 2 day raw statistics of metric specifird
+
+ You can query statistics for specific duration with startTime and endTime query Parameters:
+Possible Values for <b>startTime/endTime</b> : -60s(60 seconds ago from now), -60m(60 mins ago from now). Use h and d for hours and days. 
+  * If startTime is missing then it is assumed to be -2d (2 days ago from now)
+  * If endTime is missing then its assumed to be current Time
+
 </pre>
