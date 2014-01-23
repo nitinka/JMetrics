@@ -1,6 +1,6 @@
 package nitinka.jmetrics.archive;
 
-import nitinka.jmetrics.domain.ResourceMetric;
+import nitinka.jmetrics.monitor.ResourceMetric;
 import nitinka.jmetrics.util.ObjectMapperUtil;
 
 import java.io.IOException;

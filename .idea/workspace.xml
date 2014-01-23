@@ -5,21 +5,21 @@
     <ignored path="JMetrics.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/JMetricsArchivingEngine.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383117653796" ignored="false" />
-    <file path="/MetricsMonitorThread.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383118702346" ignored="false" />
-    <file path="/fragment.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1389956183135" ignored="false" />
-    <file path="/JMetricConfig.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1389955029766" ignored="false" />
+    <file path="/MetricsMonitorThread.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390200970411" ignored="false" />
+    <file path="/fragment.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390288193154" ignored="false" />
+    <file path="/JMetricConfig.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390293721365" ignored="false" />
     <file path="/RRD4JArchivingEngine.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383117746090" ignored="false" />
     <file path="/MetricArchivingEngine.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383128739649" ignored="false" />
     <file path="/ObjectMapperUtil.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383116895399" ignored="false" />
     <file path="/JmxMetricMonitor.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383117303574" ignored="false" />
-    <file path="/JMetric.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390195679074" ignored="false" />
-    <file path="/MetricArchivingThread.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383118669725" ignored="false" />
+    <file path="/JMetric.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390457129215" ignored="false" />
+    <file path="/MetricArchivingThread.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390288423211" ignored="false" />
     <file path="/MetricArchiverQueue.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383118879968" ignored="false" />
-    <file path="/JMetricController.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390196914684" ignored="false" />
+    <file path="/JMetricController.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390457217277" ignored="false" />
     <file path="/FileHelper.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383124119255" ignored="false" />
     <file path="$PROJECT_DIR$/../loader/loader-server/pom.xml" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383205314000" ignored="false" />
-    <file path="$PROJECT_DIR$/../loader/loader-server/src/main/java/com/flipkart/perf/server/LoaderServerService.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383127505658" ignored="false" />
-    <file path="/LoaderServerService.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383127109679" ignored="false" />
+    <file path="$PROJECT_DIR$/../loader/loader-server/src/main/java/com/flipkart/perf/server/LoaderServerService.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390286495071" ignored="false" />
+    <file path="/LoaderServerService.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390286472501" ignored="false" />
     <file path="$PROJECT_DIR$/../loader/loader-server/src/main/java/com/flipkart/perf/server/config/JMetricConfig.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383127066178" ignored="false" />
     <file path="$PROJECT_DIR$/../loader/loader-server/src/main/java/com/flipkart/perf/server/config/LoaderServerConfiguration.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383127505659" ignored="false" />
     <file path="$PROJECT_DIR$/../loader/loader-server/config/loader-server.yml" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383127505659" ignored="false" />
@@ -41,8 +41,13 @@
     <file path="$PROJECT_DIR$/../loader/loader-agent/src/main/java/com/flipkart/perf/agent/LoaderAgentService.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383205412547" ignored="false" />
     <file path="$PROJECT_DIR$/../quartz-interface/pom.xml" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383211013078" ignored="false" />
     <file path="$PROJECT_DIR$/../quartz-interface/.idea/workspace.xml" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1383211074801" ignored="false" />
-    <file path="/Dummy.txt" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1389955147541" ignored="false" />
+    <file path="/Dummy.txt" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390288435528" ignored="false" />
     <file path="/NetHelper.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390195468620" ignored="false" />
+    <file path="/Threadhold.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390207884807" ignored="false" />
+    <file path="/Threshold.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390283859175" ignored="false" />
+    <file path="/LessThanThreshold.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390283420413" ignored="false" />
+    <file path="/MetricThresholdCache.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390294768006" ignored="false" />
+    <file path="/MetricProcessingThread.java" changelist="088f1171-f421-4788-82fa-d0b4b05d4a40" time="1390457279962" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +62,50 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java" line="70" class="nitinka.jmetrics.controller.restexpress.JMetricController" package="nitinka.jmetrics.controller.restexpress">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java" line="162" class="nitinka.jmetrics.controller.restexpress.JMetricController" package="nitinka.jmetrics.controller.restexpress">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java" line="185" class="nitinka.jmetrics.controller.restexpress.JMetricController" package="nitinka.jmetrics.controller.restexpress">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -91,22 +140,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java" line="65" class="nitinka.jmetrics.controller.restexpress.JMetricController" package="nitinka.jmetrics.controller.restexpress">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -118,9 +151,9 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="JMetricController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/dropwizard/JMetricController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="47" selection-start="8" selection-end="47" vertical-scroll-proportion="0.0">
+            <state line="169" column="0" selection-start="5682" selection-end="6276" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,9 +162,9 @@
         </entry>
       </file>
       <file leaf-file-name="JMetricController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/dropwizard/JMetricController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="77" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
+            <state line="185" column="0" selection-start="7114" selection-end="7114" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,51 +172,57 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Threshold.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/domain/Threshold.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="48" column="0" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="JMetric.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetric.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="29" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.0">
+            <state line="140" column="34" selection-start="5744" selection-end="5744" vertical-scroll-proportion="-5.48">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetricsMonitorThread.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricsMonitorThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="5" selection-start="2605" selection-end="2605" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MetricProcessingThread.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricProcessingThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="23" selection-start="3079" selection-end="3079" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="method#initialize#0;class#JMetric#0" expanded="false" />
-                <element signature="method#addMetricMonitor#0;class#JMetric#0" expanded="false" />
-                <element signature="method#offerMetric#0;class#JMetric#0" expanded="false" />
-                <element signature="method#metricArchivingEngine#0;class#JMetric#0" expanded="false" />
+                <element signature="e#2201#2209#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JMetricConfig.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JMetricConfig.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetricConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="26" selection-start="304" selection-end="314" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.36324787">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Clock.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/Clock.java">
+      <file leaf-file-name="MetricProcessingQueue.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricProcessingQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="23" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.33333334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MetricArchivingEngine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricArchivingEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RRD4JArchivingEngine.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/RRD4JArchivingEngine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="18" selection-start="5550" selection-end="5550" vertical-scroll-proportion="0.0">
+            <state line="26" column="33" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -199,22 +238,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/nitinka/jmetrics/util/FileHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nitinka/jmetrics/JMetric.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nitinka/jmetrics/util/ClassHelper.java" />
-        <option value="$PROJECT_DIR$/src/test/java/nitinka/jmetrics/archive/MetricArchivingEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricArchivingEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/RRD4JArchivingEngine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricsMonitorThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/codahale/reporter/JMetricReporter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/codahale/reporter/JMetricReporterFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetricConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/monitor/ResourceMetric.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/domain/LessThanThreshold.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricThresholdCheckThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricArchiverQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricThresholdCheckQueue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricArchivingThread.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/NetHelper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/Clock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetric.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/CollectionHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/cache/MetricThresholdCache.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/domain/Threshold.java" />
         <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/dropwizard/JMetricController.java" />
         <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricProcessingThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetric.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricsMonitorThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetricConfig.java" />
       </list>
     </option>
   </component>
@@ -257,7 +296,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -356,6 +394,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JMetrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JMetrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmetrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="monitor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -513,36 +581,70 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="cache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JMetrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JMetrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jmetrics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="archive" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/nitinka/jmetrics" />
     <property name="OverrideImplement.combined" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="dynamic.classpath" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="nitinka.jmetrics.controller.dropwizard" />
-      <recent name="nitinka.jmetrics.daemon" />
       <recent name="nitinka.jmetrics.archive" />
+      <recent name="nitinka.jmetrics.daemon" />
+      <recent name="nitinka.jmetrics.controller.dropwizard" />
       <recent name="nitinka.jmetrics.util" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/nitinka/jmetrics/domain" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="nitinka.jmetrics.cache" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="nitinka.jmetrics" />
@@ -593,8 +695,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="JMetricController" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="nitinka.jmetrics.controller.dropwizard.JMetricController" />
+    <configuration default="false" name="NetHelper" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="nitinka.jmetrics.util.NetHelper" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -609,8 +711,8 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="NetHelper" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="nitinka.jmetrics.util.NetHelper" />
+    <configuration default="false" name="JMetricController" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="nitinka.jmetrics.controller.restexpress.JMetricController" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -639,19 +741,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -677,6 +766,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -716,16 +818,16 @@
     <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Application.JMetric" />
       <item index="1" class="java.lang.String" itemvalue="Application.FileHelper" />
-      <item index="2" class="java.lang.String" itemvalue="Application.JMetricController" />
-      <item index="3" class="java.lang.String" itemvalue="Application.NetHelper" />
+      <item index="2" class="java.lang.String" itemvalue="Application.NetHelper" />
+      <item index="3" class="java.lang.String" itemvalue="Application.JMetricController" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.JMetric" />
-        <item index="1" class="java.lang.String" itemvalue="Application.NetHelper" />
-        <item index="2" class="java.lang.String" itemvalue="Application.JMetricController" />
-        <item index="3" class="java.lang.String" itemvalue="Application.FileHelper" />
-        <item index="4" class="java.lang.String" itemvalue="Application.JMetricController" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JMetricController" />
+        <item index="2" class="java.lang.String" itemvalue="Application.NetHelper" />
+        <item index="3" class="java.lang.String" itemvalue="Application.JMetricController" />
+        <item index="4" class="java.lang.String" itemvalue="Application.FileHelper" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -749,7 +851,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15521978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35302198" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -761,8 +863,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33624747" sideWeight="0.74450547" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2554945" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29791528" sideWeight="0.385989" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.614011" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -829,113 +931,126 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricsMonitorThread.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1.jar!/com/google/common/cache/LoadingCache.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="79" selection-start="2414" selection-end="2414" vertical-scroll-proportion="0.0">
+        <state line="9" column="6" selection-start="361" selection-end="361" vertical-scroll-proportion="-4.6">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/MathConstant.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/CollectionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="21" column="0" selection-start="691" selection-end="691" vertical-scroll-proportion="0.3846154">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun/jre/lib/rt.jar!/java/sql/Time.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/cache/MetricThresholdCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="13" selection-start="1421" selection-end="1421" vertical-scroll-proportion="0.8717949" />
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-6-sun/jre/lib/rt.jar!/java/util/concurrent/TimeUnit.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="148" selection-end="148" vertical-scroll-proportion="0.06531204" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/codahale/metrics/metrics-core/3.0.0/metrics-core-3.0.0.jar!/com/codahale/metrics/MetricFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="167" selection-end="167" vertical-scroll-proportion="0.10683761" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/codahale/metrics/metrics-core/3.0.0/metrics-core-3.0.0.jar!/com/codahale/metrics/MetricRegistry.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="163" selection-end="163" vertical-scroll-proportion="-0.91582" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/strategicgains/RestExpress/0.9.4/RestExpress-0.9.4.jar!/com/strategicgains/restexpress/route/RouteBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="61" selection-start="2519" selection-end="2519" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="45" column="145" selection-start="1845" selection-end="1845" vertical-scroll-proportion="0.34687954">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1365#1948#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="73" column="0" selection-start="2580" selection-end="2580" vertical-scroll-proportion="0.9339207">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/RRD4JArchivingEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="18" selection-start="5550" selection-end="5550" vertical-scroll-proportion="0.0">
+        <state line="61" column="16" selection-start="2302" selection-end="2302" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricArchivingEngine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1200" selection-end="1200" vertical-scroll-proportion="0.0">
+        <state line="33" column="0" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/monitor/Metric.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="8" selection-end="47" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="32" column="11" selection-start="786" selection-end="786" vertical-scroll-proportion="0.3233618">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetric.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/monitor/JmxMetricMonitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="29" selection-start="1450" selection-end="1450" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="method#initialize#0;class#JMetric#0" expanded="false" />
-            <element signature="method#addMetricMonitor#0;class#JMetric#0" expanded="false" />
-            <element signature="method#offerMetric#0;class#JMetric#0" expanded="false" />
-            <element signature="method#metricArchivingEngine#0;class#JMetric#0" expanded="false" />
-          </folding>
+        <state line="18" column="13" selection-start="545" selection-end="545" vertical-scroll-proportion="-0.13247864">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetricConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/archive/MetricProcessingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="304" selection-end="314" vertical-scroll-proportion="0.0">
+        <state line="26" column="33" selection-start="984" selection-end="984" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/dropwizard/JMetricController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="77" selection-start="1944" selection-end="1944" vertical-scroll-proportion="0.0">
+        <state line="169" column="0" selection-start="5682" selection-end="6276" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/util/Clock.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/controller/restexpress/JMetricController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="23" selection-start="1152" selection-end="1152" vertical-scroll-proportion="0.33333334">
+        <state line="185" column="0" selection-start="7114" selection-end="7114" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/domain/Threshold.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="0" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricsMonitorThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="5" selection-start="2605" selection-end="2605" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="34" selection-start="5744" selection-end="5744" vertical-scroll-proportion="-5.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/daemon/MetricProcessingThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="23" selection-start="3079" selection-end="3079" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#2201#2209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/nitinka/jmetrics/JMetricConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.36324787">
           <folding />
         </state>
       </provider>

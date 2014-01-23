@@ -1,4 +1,4 @@
-package nitinka.jmetrics.domain;
+package nitinka.jmetrics.monitor;
 
 import com.sun.management.GarbageCollectorMXBean;
 import nitinka.jmetrics.util.JMXConnection;

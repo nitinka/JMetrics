@@ -1,4 +1,4 @@
-package nitinka.jmetrics.domain;
+package nitinka.jmetrics.monitor;
 
 /**
  * User: NitinK.Agarwal@yahoo.com

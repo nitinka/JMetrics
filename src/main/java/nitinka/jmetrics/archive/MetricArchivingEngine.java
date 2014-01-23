@@ -1,7 +1,7 @@
 package nitinka.jmetrics.archive;
 
 import nitinka.jmetrics.JMetricConfig;
-import nitinka.jmetrics.domain.ResourceMetric;
+import nitinka.jmetrics.monitor.ResourceMetric;
 import nitinka.jmetrics.util.ObjectMapperUtil;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.slf4j.Logger;

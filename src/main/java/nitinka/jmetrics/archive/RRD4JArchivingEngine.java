@@ -1,8 +1,8 @@
 package nitinka.jmetrics.archive;
 
 import nitinka.jmetrics.util.MathConstant;
-import nitinka.jmetrics.domain.Metric;
-import nitinka.jmetrics.domain.ResourceMetric;
+import nitinka.jmetrics.monitor.Metric;
+import nitinka.jmetrics.monitor.ResourceMetric;
 import nitinka.jmetrics.util.Clock;
 import nitinka.jmetrics.util.ObjectMapperUtil;
 import org.apache.commons.lang.RandomStringUtils;

@@ -1,7 +1,7 @@
 package nitinka.jmetrics.daemon;
 
-import nitinka.jmetrics.archive.MetricArchiverQueue;
-import nitinka.jmetrics.domain.MetricMonitor;
+import nitinka.jmetrics.archive.MetricProcessingQueue;
+import nitinka.jmetrics.monitor.MetricMonitor;
 import nitinka.jmetrics.util.Clock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,12 +38,13 @@ public class MetricsMonitorThread extends Thread{
     }
 
     public void run() {
+        logger.info("Started");
         while(keepRunning) {
             synchronized (metricMonitors) {
                 for(MetricMonitor metricMonitor : metricMonitors) {
                     if(canMetricMonitorRun(metricMonitor)) {
                         try {
-                            MetricArchiverQueue.offer(metricMonitor.get());
+                            MetricProcessingQueue.offer(metricMonitor.get());
                         }
                         catch (Exception e) {
                             logger.error("Error while running "+metricMonitor.getName() + " Monitor", e);
@@ -60,6 +61,7 @@ public class MetricsMonitorThread extends Thread{
                 logger.error("Error while sleeping", e);
             }
         }
+        logger.info("Finished");
     }
 
     private boolean canMetricMonitorRun(MetricMonitor metricMonitor) {
@@ -74,6 +76,7 @@ public class MetricsMonitorThread extends Thread{
 
     public static void stopRunning() {
         instance.keepRunning = false;
+        instance = null;
     }
 
     synchronized public static void addMetricMonitor(MetricMonitor metricMonitor) {

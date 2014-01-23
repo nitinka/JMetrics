@@ -1,4 +1,4 @@
-package nitinka.jmetrics.domain;
+package nitinka.jmetrics.monitor;
 
 import javax.management.MalformedObjectNameException;
 import java.io.IOException;

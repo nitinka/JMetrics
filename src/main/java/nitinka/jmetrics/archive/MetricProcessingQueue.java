@@ -1,12 +1,12 @@
 package nitinka.jmetrics.archive;
 
-import nitinka.jmetrics.domain.Metric;
-import nitinka.jmetrics.domain.ResourceMetric;
+import nitinka.jmetrics.monitor.Metric;
+import nitinka.jmetrics.monitor.ResourceMetric;
 
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.TimeUnit;
 
-public class MetricArchiverQueue {
+public class MetricProcessingQueue {
     private static LinkedBlockingQueue<ResourceMetric> resourceMetricQueue;
     static {
         resourceMetricQueue = new LinkedBlockingQueue<ResourceMetric>(100000);

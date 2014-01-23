@@ -8,14 +8,17 @@ import nitinka.jmetrics.JMetricConfig;
 import nitinka.jmetrics.archive.MetricArchivingEngine;
 import nitinka.jmetrics.archive.RRD4JArchivingEngine;
 import nitinka.jmetrics.util.Clock;
-import nitinka.jmetrics.util.MathConstant;
+import nitinka.jmetrics.util.ObjectMapperUtil;
 import org.apache.commons.io.IOUtils;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.jboss.netty.buffer.ChannelBufferInputStream;
 import org.jboss.netty.buffer.ChannelBuffers;
 import org.jboss.netty.handler.codec.http.HttpMethod;
 import org.jboss.netty.handler.codec.http.HttpResponseStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.InvocationTargetException;
@@ -29,7 +32,9 @@ import static nitinka.jmetrics.util.Clock.*;
  */
 public class JMetricController {
     private static Logger logger = LoggerFactory.getLogger(JMetricController.class);
+    private static ObjectMapper mapper = ObjectMapperUtil.instance();
     private final MetricArchivingEngine metricArchivingEngine;
+
 
     public JMetricController() {
         metricArchivingEngine = JMetric.metricArchivingEngine();
@@ -118,6 +123,82 @@ public class JMetricController {
         response.setContentType("text/html");
     }
 
+    /**
+     * Get Metric Threshold
+     * @param request
+     * @param response
+     * @throws IOException
+     */
+    public void getMetricThreshold(Request request, Response response) throws IOException {
+        String metricName = request.getHeader("metricName");
+        if(metricArchivingEngine.metrics().contains(metricName)) {
+            File metricThresholdFile = new File(JMetric.config.getThresholdPath()
+                    + File.separator
+                    + metricName + ".threshold");
+
+            if(metricThresholdFile.exists()) {
+                response.setBody(mapper.readValue(metricThresholdFile, List.class));
+                response.setResponseStatus(HttpResponseStatus.OK);
+                response.setContentType("application/json");
+            }
+            else {
+                response.setBody("No Threshold exists for "+metricName+" metric");
+                response.setResponseStatus(HttpResponseStatus.NOT_FOUND);
+            }
+        }
+        else {
+            response.setBody("Metric "+metricName + " doesn't exist");
+            response.setResponseStatus(HttpResponseStatus.NOT_FOUND);
+        }
+
+    }
+
+    /**
+     * Update Metric Threshold
+     * @param request
+     * @param response
+     * @throws IOException
+     */
+    public void updateMetricThreshold(Request request, Response response) throws IOException {
+        String metricName = request.getHeader("metricName");
+        if(metricArchivingEngine.metrics().contains(metricName)) {
+            File metricThresholdFile = new File(JMetric.config.getThresholdPath()
+                    + File.separator
+                    + metricName + ".threshold");
+
+            mapper.defaultPrettyPrintingWriter().
+                    writeValue(metricThresholdFile,
+                            mapper.readValue(new ChannelBufferInputStream(request.getBody()), List.class));
+        }
+        else {
+            response.setBody("Metric " + metricName + " doesn't exist");
+            response.setResponseStatus(HttpResponseStatus.NOT_FOUND);
+        }
+    }
+
+    /**
+     * Stop Metric Collection
+     * @param request
+     * @param response
+     * @throws IOException
+     */
+    public void stop(Request request, Response response) throws IOException {
+        JMetric.stop();
+        response.setResponseStatus(HttpResponseStatus.OK);
+    }
+
+    /**
+     * Start Metric Collection
+     * @param request
+     * @param response
+     * @throws IOException
+     */
+    public void start(Request request, Response response)
+            throws IOException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException,
+            InstantiationException, IllegalAccessException {
+        JMetric.start();
+        response.setResponseStatus(HttpResponseStatus.OK);
+    }
 
     public static void main(String[] args)
             throws InterruptedException, ClassNotFoundException, NoSuchMethodException, InstantiationException, IllegalAccessException, InvocationTargetException {
@@ -144,6 +225,8 @@ public class JMetricController {
         server.uri("/metrics/{metricName}/raw", new JMetricController()).action("metricRaw", org.jboss.netty.handler.codec.http.HttpMethod.GET);
         server.uri("/metrics/{metricName}/img", new JMetricController()).action("metricImg", org.jboss.netty.handler.codec.http.HttpMethod.GET);
         server.uri("/metrics/img", new JMetricController()).action("allMetricsImg", org.jboss.netty.handler.codec.http.HttpMethod.GET);
+        server.uri("/metrics/{metricName}/threshold", new JMetricController()).action("getMetricThreshold", org.jboss.netty.handler.codec.http.HttpMethod.GET);
+        server.uri("/metrics/{metricName}/threshold", new JMetricController()).action("updateMetricThreshold", HttpMethod.PUT);
 
         logger.info("Initialized");
         server.bind(4567);

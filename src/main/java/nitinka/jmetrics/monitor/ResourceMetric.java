@@ -1,4 +1,4 @@
-package nitinka.jmetrics.domain;
+package nitinka.jmetrics.monitor;
 
 import nitinka.jmetrics.util.Clock;
 

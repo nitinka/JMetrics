@@ -11,12 +11,14 @@ import java.util.Map;
 public class JMetricConfig {
     private String archivalEngineClass;
     private Map<String, Object> configParams;
+    private String thresholdPath;
     private int serverPort = 0; // Needed only if you want JMetric to Host it self as a server
 
     public JMetricConfig() {
         this.archivalEngineClass = RRD4JArchivingEngine.class.getCanonicalName();
         configParams = new HashMap<String, Object>();
-        configParams.put(RRD4JArchivingEngine.RRD_BASE_PATH, "./jMetrics");
+        configParams.put(RRD4JArchivingEngine.RRD_BASE_PATH, "./jMetrics/data");
+        thresholdPath = "./jMetrics/threshold";
     }
 
     public String getArchivalEngineClass() {
@@ -41,5 +43,13 @@ public class JMetricConfig {
 
     public void setServerPort(int serverPort) {
         this.serverPort = serverPort;
+    }
+
+    public String getThresholdPath() {
+        return thresholdPath;
+    }
+
+    public void setThresholdPath(String thresholdPath) {
+        this.thresholdPath = thresholdPath;
     }
 }
