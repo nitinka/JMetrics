@@ -20,7 +20,9 @@
      Use h and d   for hours and days. 
      If startTime is missing then it is assumed to be -2d (2 days ago from now)
      If endTime is missing then its assumed to be current Time
-  
+</pre>
+* To Add Threshold to metrics:
+<pre>
   Http PUT on http://host:port/servletPath/metrics/metricName/threshold
     [
       {
@@ -36,12 +38,13 @@
 
   Http GET on http://host:port/servletPath/metrics/metricName/threshold 
      Returns set threshold for given metric
-
+</pre>
+* To Start/Stop Metric Collection:
+<pre>
   http://host:port/servletPath/stop
      Stop the monitoring
   http://host:port/servletPath/start
      Start the monitoring
-
 </pre>
 
 <br><b>Sample metric report :
