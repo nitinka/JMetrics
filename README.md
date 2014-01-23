@@ -183,8 +183,9 @@ jMetricConfig:
 jMetricConfig:
   archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
   configParams:
-    basePath: "/var/log/your-app/stats"
+    basePath: "/var/log/your-app/jmetric/data"
   serverPort: 4567
+  thresholdPath : "/var/log/your-app/jmetric"
 </pre><br>
 
 3) Add following in your service initialization code :<br>
