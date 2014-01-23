@@ -1,8 +1,8 @@
-* Its a very simple java lib which allows users to capture various metrics from within running jvm and store them locally using rrd4j library and serve them back using simple http end points from with in the app<br>
-* JMX metrics are captured out of box. Library also expose single liner code to add any user defined metrics either explicitly or by writing threaded metric monitors.<br>
-* Such stored metrics can be viewed, graphed to make meaningful decisions in terms of scaling, improving performance and functional aspects.<br>
-* Users can add threshold limits to any monitored metric( say deadlock, memory etc), when ever any metric breaches the threshold it would also be captured and showcased in report.
-* This library can be embedded within any existing java application to get meaningful metrics driven information with in few minutes. DThere is direct support for Dropwizard and RestExpress based web application. For stand alone application, JMetric can be told to start a light weight embedded server.
+* Its a very simple java lib which allows users to capture various metrics from within running jvm and store them locally using rrd4j library and serve them back using simple http end points from with in the app<br><br>
+* JMX metrics are captured out of box. Library also expose single liner code to add any user defined metrics either explicitly or by writing threaded metric monitors.<br><br>
+* Such stored metrics can be viewed, graphed to make meaningful decisions in terms of scaling, improving performance and functional aspects.<br><br>
+* Users can add threshold limits to any monitored metric( say deadlock, memory etc), when ever any metric breaches the threshold it would also be captured and showcased in report.<br><br>
+* This library can be embedded within any existing java application to get meaningful metrics driven information with in few minutes. DThere is direct support for Dropwizard and RestExpress based web application. For stand alone application, JMetric can be told to start a light weight embedded server.<br><br>
 * You can start/stop service at runtime just by hitting http end point<br>
 * Http end points :
 <pre>
@@ -15,12 +15,12 @@
   http://host:port/servletPath/metrics/metricName/raw
      Returns last 2 day raw statistics of metric specifird
 
-You can query statistics for specific duration with startTime and endTime query Parameters:
-Possible Values for <b>startTime/endTime</b> : -60s(60 seconds ago from now), -60m(60 mins ago from now). Use h and d for hours and days. 
-  * If startTime is missing then it is assumed to be -2d (2 days ago from now)
-  * If endTime is missing then its assumed to be current Time
-
-
+  You can query statistics for specific duration with startTime and endTime query Parameters:
+  Possible Values for <b>startTime/endTime</b> : -60s(60 seconds ago from now), -60m(60 mins ago from now)
+     Use h and d   for hours and days. 
+     If startTime is missing then it is assumed to be -2d (2 days ago from now)
+     If endTime is missing then its assumed to be current Time
+  
   Http PUT on http://host:port/servletPath/metrics/metricName/threshold
     [
       {
