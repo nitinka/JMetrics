@@ -84,7 +84,7 @@ jMetricConfig:
   archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
   configParams:
     basePath: "/var/log/your-app/jmetric/data"
-  thresholdPath : "/var/log/your-app/jmetric"  
+  thresholdPath : "/var/log/your-app/jmetric/threshold"  
 </pre><br>
 
 3) Add following in your service initialization code :<br>
@@ -133,7 +133,7 @@ jMetricConfig:
 <dependency>
     <groupId>nitinka.jmetrics</groupId>
     <artifactId>JMetrics</artifactId>
-    <version>0.1.5</version>
+    <version>0.1.6</version>
 </dependency> 
 ```
 <br>
@@ -143,7 +143,7 @@ jMetricConfig:
   archivalEngineClass: "nitinka.jmetrics.archive.RRD4JArchivingEngine"
   configParams:
     basePath: "/var/log/your-app/jmetric/data"
-  thresholdPath : "/var/log/your-app/jmetric"  
+  thresholdPath : "/var/log/your-app/jmetric/threshold"  
 </pre><br>
 
 3) Add following in your service initialization code :<br>
@@ -179,7 +179,7 @@ jMetricConfig:
 <dependency>
     <groupId>nitinka.jmetrics</groupId>
     <artifactId>JMetrics</artifactId>
-    <version>0.1.5</version>
+    <version>0.1.6</version>
 </dependency> 
 ```
 <br>
@@ -190,7 +190,7 @@ jMetricConfig:
   configParams:
     basePath: "/var/log/your-app/jmetric/data"
   serverPort: 4567
-  thresholdPath : "/var/log/your-app/jmetric"
+  thresholdPath : "/var/log/your-app/jmetric/threshold"
 </pre><br>
 
 3) Add following in your service initialization code :<br>
