@@ -87,15 +87,7 @@ jMetricConfig:
   thresholdPath : "/var/log/your-app/jmetric/threshold"  
 </pre><br>
 
-3) Add following in your service initialization code :<br>
-
-<pre>
-    JMetric.initialize(configuration.getjMetricConfig());
-    environment.addResource(new JMetricController())
-</pre>
-
-<br>
-4) Add following code in your Dropwizard Applicaion Config Class :<br>
+3) Add following code in your Dropwizard Applicaion Config Class :<br>
 
 <pre>
     private JMetricConfig jMetricConfig;
@@ -107,6 +99,14 @@ jMetricConfig:
     public void setjMetricConfig(JMetricConfig jMetricConfig) {
         this.jMetricConfig = jMetricConfig;
     }
+</pre>
+<br>
+
+4) Add following in your service initialization code :<br>
+
+<pre>
+    JMetric.initialize(configuration.getjMetricConfig());
+    environment.addResource(new JMetricController())
 </pre>
 
 <br>
@@ -150,7 +150,7 @@ jMetricConfig:
 
 <pre>
     JMetric.initialize(jMetricConfigInstance);
-    nitinka.jmetrics.controller.restexpress.JMetricController.setup();
+    nitinka.jmetrics.controller.restexpress.JMetricController.setup(restexpressServerInstance);
 </pre>
 
 <br>
