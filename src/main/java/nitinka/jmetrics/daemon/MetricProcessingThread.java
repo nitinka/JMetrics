@@ -46,7 +46,6 @@ public class MetricProcessingThread extends Thread{
         while(keepRunning) {
             try{
                 ResourceMetric resourceMetric = MetricProcessingQueue.poll();
-                logger.info("Processing :"+ObjectMapperUtil.instance().writeValueAsString(resourceMetric));
                 if(resourceMetric == null) {
                     continue;
                 }
