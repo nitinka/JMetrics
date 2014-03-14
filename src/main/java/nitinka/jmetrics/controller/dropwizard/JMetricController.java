@@ -28,6 +28,7 @@ import static nitinka.jmetrics.util.Clock.*;
 /**
  * Resource to manage operations on loader-agents
  */
+@Path("/metrics")
 public class JMetricController {
     private final MetricArchivingEngine metricArchivingEngine;
     private static ObjectMapper mapper = ObjectMapperUtil.instance();
@@ -36,7 +37,6 @@ public class JMetricController {
         this.metricArchivingEngine = JMetric.metricArchivingEngine();
     }
 
-    @Path("/metrics")
     @Produces(MediaType.APPLICATION_JSON)
     @GET
     @Timed
@@ -48,7 +48,7 @@ public class JMetricController {
     @Produces(MediaType.APPLICATION_JSON)
     @GET
     @Timed
-    @Path("/metrics/{metricName}/raw")
+    @Path("{metricName}/raw")
     synchronized public String metricRaw(@PathParam("metricName") String metricName,
                                          @QueryParam("startTime") @DefaultValue("-1") String startTime,
                                          @QueryParam("endTime")  @DefaultValue("-1") String endTime)
@@ -59,7 +59,7 @@ public class JMetricController {
     @Produces(MediaType.APPLICATION_OCTET_STREAM)
     @GET
     @Timed
-    @Path("/metrics/{metricName}/img")
+    @Path("{metricName}/img")
     synchronized public InputStream metricImage(@PathParam("metricName") String metricName,
                                                 @QueryParam("startTime") @DefaultValue("-1") String startTime,
                                                 @QueryParam("endTime")  @DefaultValue("-1") String endTime)
@@ -70,7 +70,7 @@ public class JMetricController {
     @Produces(MediaType.TEXT_HTML)
     @GET
     @Timed
-    @Path("/metrics/img")
+    @Path("img")
     synchronized public String allMetricsImg(@Context HttpServletRequest request,
                                              @QueryParam("startTime") @DefaultValue("-1") String startTime,
                                              @QueryParam("endTime")  @DefaultValue("-1") String endTime)
@@ -98,7 +98,7 @@ public class JMetricController {
     @Produces(MediaType.APPLICATION_JSON)
     @GET
     @Timed
-    @Path("/metrics/{metricName}/threshold")
+    @Path("{metricName}/threshold")
     public List getMetricThreshold(@PathParam("metricName") String metricName) throws IOException {
         if(metricArchivingEngine.metrics().contains(metricName)) {
             File metricThresholdFile = new File(JMetric.config.getThresholdPath()
@@ -124,7 +124,7 @@ public class JMetricController {
 
     @PUT
     @Timed
-    @Path("/metrics/{metricName}/threshold")
+    @Path("{metricName}/threshold")
     /**
      * Update Metric Threshold
      * @param metricName

@@ -42,20 +42,20 @@ public class JMetricController {
 
     public static void setup(RestExpress server) {
         JMetricController controller = new JMetricController();
-        server.uri("/metrics", new JMetricController())
+        server.uri("/metrics", controller)
                 .action("metricNames", HttpMethod.GET);
         logger.info("Do Http Get on /metrics to get all metric names");
 
-        server.uri("/metrics/img", new JMetricController())
+        server.uri("/metrics/img", controller)
                 .action("allMetricsImg", HttpMethod.GET).
                 noSerialization();
         logger.info("Do Http Get on /metrics/img to get all metric images");
 
-        server.uri("/metrics/{metricName}/raw", new JMetricController())
+        server.uri("/metrics/{metricName}/raw", controller)
                 .action("metricRaw", HttpMethod.GET);
         logger.info("Do Http Get on /metrics/{metricName}/raw to get metric raw details");
 
-        server.uri("/metrics/{metricName}/img", new JMetricController())
+        server.uri("/metrics/{metricName}/img", controller)
                 .action("metricImg", HttpMethod.GET).
                 noSerialization();
         logger.info("Do Http Get on /metrics/{metricName}/img to get metric stats image");
